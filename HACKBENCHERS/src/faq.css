@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap'); /*google font import*/
+#loading
+   {
+   background-color: white;
+   position: fixed;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   .gif
+   {
+   width: 50%;
+   }
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+    background: white ;
+    
+}
+p{
+    font-size: large;
+}
+/* .faqssss{
+    height: 80vh;
+} */
+body{
+    background-color: #bce0da;
+}
+.container-fluidsss{
+    margin-bottom: auto;
+    width: 40%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.container-fluidsss h2{
+    color: #174b80;
+    position: relative;
+    width: 45rem; 
+}
+@media only screen and (max-width:860px){
+    .container-fluidsss h2{
+        width:23rem;
+    }
+
+}
+
+.accordian{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #1f5c9a;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.accordian .icon{
+    margin: 3px 10px 3px 0;
+    width: 30px;
+    height: 30px;
+    background: url() no-repeat 8px 7px #1f5c9a;
+    border-radius: 50%;
+    float:left;
+    transition: all .5s ease-in;
+}
+.accordian h4{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+    transition: all .5s ease-in;
+}
+.active .icon{
+    background: url() no-repeat 8px 7px #fff;
+} 
+ .active{
+    background-color: #174b80;
+    color:#fff;
+} 
+ .active h4{
+    color: #fff;
+}
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid #174b80;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align:  justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+
+.askme input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #174b80;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+.askme input[type="submit"]:hover{
+	cursor: pointer;
+	background :white;
+    color: #174b80;
+    border:2px solid #174b80;
+
+}
+.askme input[type="text"],input[type="email"],input[type="textarea"]{
+	padding-top: 1px;
+	padding-bottom: 2px;
+	border: none;
+	border-bottom: 1px solid #174b80;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:#174b80;
+	font-size: 16px;
+	margin-bottom: 10px;
+	 
+}

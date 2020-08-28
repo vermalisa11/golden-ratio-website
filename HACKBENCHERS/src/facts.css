@@ -1,0 +1,92 @@
+#loading
+   {
+   background-color: white;
+   position: fixed;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   .gif
+   {
+   width: 50%;
+   }
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.section-4{
+  background-color: #e8ded2;
+}
+.section-4 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+    font-family: 'flamingo', cursive;
+}
+  .section-4 .container p {
+    font-size: large;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  
+  .section-4 .team {
+    padding: 10vmin 4vmin;
+  }
+  
+  .section-4 .card {
+    width: 22em;
+    margin-top: 10vmin;
+  }
+  
+  .section-4 .card .card-text {
+    padding: 0.5em;
+  }
+  
+  .section-4 .card-body > a {
+    font-size: 1.5em;
+  }
+  
+  .section-4 .carousel-item {
+    padding-left: 3rem;
+  }
+  
+  .para{
+    font-size: 20px;
+    
+  }
+  @media only screen and (max-width: 375px) {
+    .section-4 .card {
+      width: 18em;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .section-4 .carousel-inner {
+      margin-left: -4vmin;
+    }
+  
+  /* .border-radius {
+    border-radius: 340px;
+    width: 60%;
+  }*/
+  

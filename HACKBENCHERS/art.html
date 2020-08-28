@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golden Ratio</title>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="src/header.css">
+    <link rel="stylesheet" href="src/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style type="text/css">
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #loading
+   {
+   background-color: white;
+   position: fixed;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   .gif
+   {
+   width: 50%;
+   }
+    hr{
+        width: 60%;
+        margin-left: 20%;
+        border-top: 1.3px solid grey;
+    }
+    .nav11 li{
+      /* box-shadow:0 5px 3px 0 #174b80; */
+      background-color: #174b80;
+      padding: 5px 20px 5px 20px;
+      margin-right: 1%;
+      color: lightskyblue;
+    }
+    .nav11 li a{
+        color: white;
+    }
+    .nav11 li:hover{
+      background-color: lightskyblue;
+       color: blue;
+       border-bottom: 2px solid #174b80;
+        
+    }
+    .nav11 li a:hover{
+        
+       color:#174b80;
+       
+        
+    }
+    .nav11 li:active{
+        background-color: rgb(112, 155, 197);
+    }
+
+    #heading{
+        text-align: center;
+        margin-top: 30px;
+        font-family: 'Tangerine', serif;
+        font-weight: 600;
+        font-size: 60px;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+    .sub{
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 500;
+        color: gray;
+    }
+    
+    .conl{
+        background-image:linear-gradient(to bottom,#CCCCCC, white);
+        margin-top: 20px;   
+    }
+    .img{
+        margin-left: 6%;
+        width: 88%;
+        align-content: center;
+        margin-top: 20px;
+    }
+    .img:hover{
+        transform: scale(1.1);
+        z-index: +10;
+        border: 1px solid black;
+    }
+    /*SLIDESHOW---------------*/
+    .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slides{
+  width: 90%;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 892px){
+  .navvbar{
+    display: none;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+footer{
+  margin-top: 40px ;
+} 
+    
+</style>
+</head>
+
+ <body onload="myFunction()">
+  <div id="loading">
+    <img src="https://flevix.com/wp-content/uploads/2019/07/Facebook-Loading-Icons-1.gif" class="gif">
+    </div>
+  <header> 
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg "style="border-bottom: 2px solid black">
+        <img src="assets/logo.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">HOME</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="uploadpict.html">GR GENERATOR
+               
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQ.html">FAQs</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="facts.html">FACTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ABOUT US (3).html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link quiz" href="https://forms.gle/nEibasdzb6g9u2n88">QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link quiz" href="register\login.php">LOG IN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+    
+    <h1 id="heading">Art</h1><br>
+    <div class="container-fluid">
+        <center><nav class="navbar navbar-expand-lg bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-align-left" style="font-size:36px;color: #ffffff;"></i>
+    <!-- <span class="navbar-toggler-icon"></span> -->
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav nav11">
+      <li class="nav-item">
+        <a class="nav-link" href="nature.html">Nature</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="architecture.html">Architecture</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="Technology.html">Technology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Human.html">Human</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="memes.html">Memes</a>
+      </li>
+    </ul>
+  </div>
+</nav></center><br><br>
+        <div class="container">
+          <center>
+            <div class=" col-lg-9 slides">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://i.pinimg.com/564x/64/f9/59/64f959ee97dff30260d02f8d3ebc16aa.jpg" style="width:90%;height: 400px;">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://i.pinimg.com/564x/f9/6f/c7/f96fc7386acdafe941ea923c1cfd1067.jpg" style="width:90%;height: 400px;">
+                    <div class="text">Caption Two</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://i.pinimg.com/564x/ba/ea/c5/baeac5778aabd68b48b69074a81d9200.jpg" style="width:90%;height: 400px;">
+                    <div class="text">Caption Three</div>
+                  </div><br>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+                  
+
+              </center>
+            </div>
+
+            
+        </div><br><br>
+        <div class="row">
+            <div class=" col-sm-4">
+                <div class="conl">
+                         <img src="https://i.pinimg.com/564x/64/f9/59/64f959ee97dff30260d02f8d3ebc16aa.jpg" class="img-fluid img">
+                </div>
+                <div class="conl">
+                         <img src="https://i.pinimg.com/564x/94/a6/43/94a643560291664ba73f1f14fcb5161b.jpg" class="img-fluid img">
+                </div>
+                  
+            </div>
+            <div class="col-sm-4">
+                <div class="conl">
+                         <img src="https://i.pinimg.com/564x/60/cd/53/60cd53aaa0dd4c18ab9b92e9ed86777a.jpg" class="img-fluid img">
+                </div>
+                 
+            </div>
+            <div class="col-sm-4">
+                <div class="conl">
+                         <img src="https://i.pinimg.com/564x/f9/6f/c7/f96fc7386acdafe941ea923c1cfd1067.jpg" class="img-fluid img">
+                </div>
+                <div class="conl">
+                         <img src="https://i.pinimg.com/564x/ba/ea/c5/baeac5778aabd68b48b69074a81d9200.jpg" class="img-fluid img">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-5 col-sm-5">
+            <h4 class="text-light">Address:</h4>
+            <p class="text-muted">SVNIT Campus, Athwa, Surat, Gujarat, India 
+              395007 
+            </p>
+           
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <h4 class="text-light">Newsletter</h4>
+            <p class="text-muted">Stay Updated</p>
+            <form class="form-inline">
+              <div class="col pl-0">
+                <div class="input-group pr-5">
+                  <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h4 class="text-light">Follow Us</h4>
+            <p class="text-muted">Let us be social</p>
+            <div class="column text-light">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <script>
+            var preloader = document.getElementById('loading');
+            function myFunction(){
+            preloader.style.display = 'none';}
+        </script>
+</body>
+</html>
